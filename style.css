@@ -1,0 +1,134 @@
+* {
+  font-family: "Consolas", monospace;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  /*height: 100vh;*/
+/*   display:flex; */
+  justify-content: center;
+  color: #ffffff;
+  background-color: #000000;
+  
+  overflow:hidden; /*hide scrollbars*/
+  
+}
+canvas {
+  display: block;
+}
+
+button {
+  background-color: #333333; /* Dark gray background for buttons */
+  color: #ffffff; /* White text for buttons */
+  border: 2px solid #444444; /* Slightly lighter border */
+  padding: 10px 20px;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.1s ease; /* Smooth transition for hover effect */
+  outline: none; /* Remove default focus outline */
+  
+}
+
+button:hover {
+  background-color: #555555; /* Lighter gray on hover */
+  border-color: #777777; /* Slightly lighter border on hover */
+}
+
+button:active {
+  background-color: #777777; /* Darker gray when button is pressed */
+  border-color: #888888;
+}
+
+input[type="text"] {
+  -webkit-appearance: none; /* Remove default slider style */
+  appearance: none;
+  background: #333333; /* Dark background for the slider */
+  border-radius: 3px;
+  outline: none;
+  transition: background 0.1s ease;
+  color: #ffffff ;
+}
+
+/* Slider styles */
+input[type="range"] {
+  -webkit-appearance: none; /* Remove default slider style */
+  appearance: none;
+  width: 200px;
+  height: 6px;
+  background: #444444; /* Dark background for the slider */
+  border-radius: 3px;
+  outline: none;
+  transition: background 0.1s ease; /* Smooth transition for background color */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default thumb style */
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #ffffff; /* White thumb */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+input[type="range"]:hover {
+  background: #555555; /* Lighter background when hovered */
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  background-color: #888888; /* Darker thumb when active */
+}
+
+/* Dropdown (select) styles */
+select {
+  background-color: #333333; /* Dark background for dropdown */
+  color: #ffffff; /* White text for dropdown */
+  border: 2px solid #444444; /* Slightly lighter border */
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+select:hover {
+  background-color: #555555; /* Lighter background on hover */
+  border-color: #777777; /* Lighter border on hover */
+}
+
+/* Style for dropdown options */
+option {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 8px;
+}
+
+option:hover {
+  background-color: #444444; /* Lighter background for options on hover */
+}
+
+/* Focused elements */
+button:focus,
+select:focus,
+input[type="range"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #77ccff; /* Blueish glow on focus for accessibility */
+}
+
+/* Additional styling for better layout on page */
+.container {
+  text-align: center; /* Center-align content */
+}
+
+h1 {
+  color: #ffffff; /* White text for headings */
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #aaaaff;
+}
